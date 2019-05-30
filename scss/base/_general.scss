@@ -6,6 +6,7 @@ html {
     ::selection {
         color: $selection_color;
     }
+    scroll-behavior: smooth;
 }
 @include main; 
 

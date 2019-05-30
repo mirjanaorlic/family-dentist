@@ -2,7 +2,8 @@
   outline: none; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   html ::selection {
     color: #90D6CB; }
 
@@ -396,7 +397,8 @@ body {
   padding-left: 15.5rem;
   padding-right: 3rem;
   padding-top: 2rem;
-  color: #B03B6F; }
+  color: #B03B6F;
+  background-color: #90D6CB; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .review--how {
       padding: 2rem;
