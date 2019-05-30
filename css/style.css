@@ -162,11 +162,15 @@ body {
   left: 42%;
   width: 40%;
   text-align: center; }
-  @media only screen and (max-width: 1200px) {
-    .showcase .button {
-      display: none;
-      top: 10%;
-      left: 42%; } }
+  .showcase .button {
+    border: 1px solid #B03B6F; }
+    .showcase .button:hover {
+      color: #B03B6F; }
+    @media only screen and (max-width: 1200px) {
+      .showcase .button {
+        display: none;
+        top: 10%;
+        left: 42%; } }
   @media only screen and (max-width: 767px) {
     .showcase {
       top: 55%;
@@ -533,10 +537,16 @@ body {
         font-size: 1rem; } }
   .pricing .box--unlimited .button {
     margin-top: 4rem; }
+    .pricing .box--unlimited .button:hover {
+      background-color: #B03B6F; }
+  .pricing .box--unlimited .box__price:hover {
+    background-color: #B03B6F; }
   .pricing .box--single .box__title {
     color: #B03B6F; }
   .pricing .box--single .button {
     background-color: #B03B6F; }
+    .pricing .box--single .button:hover {
+      background-color: #90D6CB; }
   .pricing .box--single .box__price {
     background-color: #B03B6F;
     box-shadow: 0 0 0 0.5rem #B03B6F;

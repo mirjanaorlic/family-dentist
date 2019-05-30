@@ -66,6 +66,14 @@
     .box--unlimited {
         .button {
             margin-top: 4rem;
+            &:hover {
+                background-color: $main_text_color;
+            }
+        }
+        .box__price {
+            &:hover {
+                background-color: $main_text_color;
+            }
         }
     }
     .box--single {
@@ -74,6 +82,9 @@
         }
         .button {
             background-color: $main_text_color;
+            &:hover {
+                background-color: $selection_color;
+            }
         }
         .box__price {
             background-color: $main_text_color;
