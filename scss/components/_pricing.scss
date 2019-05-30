@@ -1,0 +1,90 @@
+.pricing {
+    background-color: $background-color;
+    padding-top: 4rem;
+    padding-bottom: 9rem;
+    .boxes {
+       @include flex;
+       @include flex-wrap(wrap);
+       @include justify-content(center);
+       @media only screen and (max-width: 900px) {
+        @include flex-direction(column);
+      }
+    }
+    .box {
+        background-color: $secondary_text_color;
+        flex-basis: 40%;
+        max-width: 40%;
+        text-align: center;
+        margin: 2rem 2rem;
+        padding-bottom: 4rem;
+        @media only screen and (max-width: 900px) {
+            flex-basis: 100%;
+            max-width: 100%;
+          }
+       .button {
+            background-color: $selection_color;
+            margin-top: 4rem;
+            font-size: 1.3rem;
+        }
+    }
+    .box__title {
+        color: $main_text_color;
+        font-size: 2rem; 
+        padding-top: 3.4rem;
+    }
+    .box__price {
+        width: 13rem;
+        height: 13rem;
+        background-color: $selection_color;
+        border: .4rem solid #fff;
+        box-shadow: 0 0 0 .5rem $selection_color;
+        color: $secondary_text_color; 
+        font-size: 4rem;
+        display: inline-block;
+        line-height: 1;
+        margin-top: 2.4rem;
+    }
+    .box__price--img {
+       padding-top: 2.4rem;
+  
+    }
+    .pricing-img {
+        max-width: 15rem;
+    }
+    .box__pm {
+        font-size: 1.5rem;
+    }
+    .box__description {
+        color: $main_text_color;
+        font-size: 2rem;
+        margin-top: 2rem;
+        padding: 0 2rem;
+        @media only screen and (max-width: 375px) {
+            font-size: 1rem;
+          }
+    }
+    .box--unlimited {
+        .button {
+            margin-top: 4rem;
+        }
+    }
+    .box--single {
+        .box__title {
+            color: $main_text_color;
+        }
+        .button {
+            background-color: $main_text_color;
+        }
+        .box__price {
+            background-color: $main_text_color;
+            box-shadow: 0 0 0 .5rem $main_text_color;
+            line-height: 3;
+        }    
+    }    
+}
+.pricing__heading {
+    color: $main_text_color;
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 4.9rem;
+}

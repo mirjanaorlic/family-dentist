@@ -1,0 +1,83 @@
+.banner-wrapper {
+    position: relative;
+}
+.banner-img {
+    background-image: url('../images/banner-img.jpg');
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 65%;
+    position: relative;
+    @media only screen and (max-width: 767px) {
+        height: 100vh;
+     }
+  }
+.banner-content {
+    z-index: 8;
+    width: 100%;
+}
+.showcase {
+    position: absolute; 
+    color: $main_text_color;
+    top: 10%;
+    left: 42%;
+    width: 40%;
+    text-align: center;
+    .button {
+        @media only screen and (max-width: 1200px) {
+            display: none;
+            top: 10%;
+            left: 42%;
+         }
+    }
+  
+    @media only screen and (max-width: 767px) {
+        top: 55%;
+        left: 10%;
+        text-align: start;
+     }
+}
+.showcase__heading {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        font-size: 3rem;
+     }
+     @media only screen and (max-width: 375px) {
+        font-size: 2.5rem;
+      }
+}
+// Fixed dots navigation
+.dots {
+    @include flex;
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    margin-top: 10rem;
+}
+.dot-link {
+    background-color: none;
+    border-radius: 50%;
+    border: .1rem solid $main_text_color; 
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: .2rem 0;
+    margin-right: 5.1rem;
+    z-index: 15;
+    display: inline-block;
+} 
+.active-colored {
+    background-color: $main_text_color;
+}
+.active-white {
+    background-color: $background-color;
+}
+
+.fixed {
+    @include flex;
+    @include justify-content(flex-end);
+    position: fixed;
+    right: 0;
+    top: 33%;
+    z-index: 10;
+}
+
+

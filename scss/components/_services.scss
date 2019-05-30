@@ -1,0 +1,70 @@
+.services {
+    padding: 9rem 0 0 0;
+    position: relative;
+    background-color: $background_color;
+    .button {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        bottom: 6rem;
+    }
+}
+.services__heading {
+    color: $main_text_color;
+    text-align: center;
+    font-size: 5rem;
+    @media only screen and (max-width: 375px) {
+        font-size: 3rem;
+      }
+}
+.columns {
+    @include flex;
+    @include flex-wrap(wrap);
+    @include justify-content(space-around);
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 14rem;
+    @media only screen and (max-width: 767px) {
+       @include flex-direction(column);
+     }
+}
+.column {
+    flex-basis: 30%;
+    max-width: 30%;
+    margin-bottom: 2rem;
+    @media only screen and (max-width: 900px) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+}
+.column__num {
+    display: inline-block;
+    color: $secondary_text_color;
+    background-color: $main_text_color;
+    padding: 1rem;
+    line-height: .7rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+.column__subtitle {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: $main_text_color;
+    font-size: 2rem;
+}
+.column__paragraph {
+    padding-top: 1rem;
+   
+    .small {
+        font-size: 1rem;
+    }
+}
+.column__description {
+    color: $main_text_color;
+    text-decoration: none;
+    font-size: 2rem;
+    @media only screen and (max-width: 375px) {
+        font-size: 1rem;
+      }
+}

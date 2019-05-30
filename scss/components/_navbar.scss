@@ -1,0 +1,73 @@
+.navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    background-color: $main_text_color;
+    color: $background-color;
+}
+.close-btn {
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    text-align: center;
+    color: $background-color;
+    font-size: 1.2rem;
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        right: 10%;;
+    }
+} 
+.close-letter {
+    font-size: 6.5rem;
+    color: $background-color;
+    font-family: sans-serif;
+    &:visited {
+        color: $background-color;
+    }
+    &:hover {
+        color: $background-color;
+    }
+    &:active {
+        color: $background-color;
+    }
+}
+.navabar-inner {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 15rem;
+    .nav-list__link {
+        text-decoration: none;
+        color: $background-color;
+    }
+}
+.nav-list__item {
+    list-style: none;
+    font-size: 1.8rem;
+    padding: 2rem 9rem;
+    text-align: center;
+    border: .1rem solid $background-color;
+    margin-bottom: .5rem;
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        font-size: 1.6rem;
+     }
+     @media only screen and (max-width: 1000px) {
+        padding: 2rem 2rem;
+      }
+}
+.nav__title {
+    padding-bottom: 3.5rem;
+    font-size: 3.5rem;
+    font-family: 'JohnSansTextPro'; 
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        font-size: 2.4rem;
+     }
+}
+.nav__logo {
+    padding-top: 8.2rem;
+}

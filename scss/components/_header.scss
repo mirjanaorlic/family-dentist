@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 5rem;
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        padding: 5rem 2.5rem;
+     }
+}
+.logo {
+    font-size: 2rem;
+}
+.header.active {
+    background-color: $background_color;
+    padding: 2rem 5rem;
+}
+.menu__bar {
+    width: 3.5rem;
+    height: .2rem;
+    background-color: #000;
+    margin: .8rem 0;
+    transition: 0.4s;
+    background-color: $main_text_color;
+}
+.menu__name {
+    font-size: 1.2rem;
+}
+ 

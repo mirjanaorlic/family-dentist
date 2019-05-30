@@ -1,0 +1,12 @@
+.button {
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: $main_text_color;
+    border: none;
+    padding: 1rem 2.5rem;
+    color: $secondary_text_color;
+    &:hover {
+        background-color: $selection_color;
+        cursor: pointer;
+    }
+}

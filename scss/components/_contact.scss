@@ -1,0 +1,64 @@
+.contact {
+    background-color: $selection_color;
+}
+.contact-inner {
+    @include flex;
+    @include justify-content(space-between);
+    padding: 7rem 0;
+    color: $main_text_color;
+    @media only screen and (max-width: 900px) {
+        @include flex-direction(column);
+    }
+}
+.col {
+    @media only screen and (max-width: 900px) {
+        padding-bottom: 5rem;
+      }
+}
+.col--first {
+    font-size: 5rem;
+    @media only screen and (max-width: 375px) {
+        font-size: 3rem;
+      }
+}
+.col--second {
+    .col__title {
+        font-size: 2rem;
+    }
+    .contact-list__item {
+        list-style: none;
+        padding-top: 1rem;
+    }
+    .contact-list__link {
+        font-size: 1.5rem;
+        
+    }
+}
+
+.fab {
+    margin-right: .5rem;
+    &.fa-facebook-square {
+        color: $main_text_color; 
+        background-color: $secondary_text_color;
+        border-radius: 50%;
+        padding: 1.3rem;
+    }
+
+    &.fa-twitter {
+        color: $main_text_color; 
+        background-color: $secondary_text_color;
+        border-radius: 50%;
+        padding: 1.3rem;
+    }
+    &.fa-linkedin-in {
+        color: $main_text_color; 
+        background-color: $secondary_text_color;
+        border-radius: 50%;
+        padding: 1.3rem;
+    }
+    &:hover {
+        background-color: $main_text_color;
+        color: $secondary_text_color;
+        
+    }
+}
