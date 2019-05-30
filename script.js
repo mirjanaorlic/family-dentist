@@ -77,7 +77,7 @@ function changeColor() {
   if(scrollPosY == 0) {
     removeDotColor();
     showcaseDot.classList.add('active-colored');
-  } else if (scrollPosY >= servicesSectionTop && scrollPosY <= reviewsSectionTop) {
+  } else if (scrollPosY >= servicesSectionTop && scrollPosY <= reviewsSectionTop){
     removeDotColor();
     servicesDot.classList.add('active-colored');
   } else if (scrollPosY >= reviewsSectionTop && scrollPosY <= pricingSectionTop){
