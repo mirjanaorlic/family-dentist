@@ -36,9 +36,9 @@ body {
   padding: 6rem 12rem;
   max-width: 190rem;
   margin: 0 auto; }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     .container {
-      padding: 3rem 7rem; } }
+      padding: 2rem 6rem; } }
 
 .navbar {
   display: none;
