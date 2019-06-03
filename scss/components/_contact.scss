@@ -4,7 +4,7 @@
 .contact-inner {
     @include flex;
     @include justify-content(space-between);
-    padding: 7rem 0;
+    padding: 24rem 0;
     color: $main_text_color;
     @media only screen and (max-width: 900px) {
         @include flex-direction(column);
