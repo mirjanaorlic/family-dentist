@@ -68,9 +68,7 @@ var pricingDot = document.getElementById('pricing-dot');
 var contact = document.getElementById('js-contact');
 var contactSectionTop = contact.getBoundingClientRect().top; 
 var contactDot = document.getElementById('contact-dot');
-
 var showcaseDot = document.getElementById('showcase-dot');
-
 var scrollPosY = window.scrollY;
 
 function changeColor() {
@@ -86,7 +84,7 @@ function changeColor() {
   } else if (scrollPosY >= pricingSectionTop && scrollPosY <= contactSectionTop){
     removeDotColor();
     pricingDot.classList.add('active-colored');
-  } else if (scrollPosY >= contactSectionTop) {
+  } else if (scrollPosY >= pricingSectionTop) {
     removeDotColor();
     contactDot.classList.add('active-colored');
   }
