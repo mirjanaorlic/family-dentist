@@ -573,6 +573,7 @@ body {
   justify-content: space-between;
   -ms-flex-pack: space-between;
   padding: 24rem 0;
+  height: 100vh;
   color: #B03B6F; }
   @media only screen and (max-width: 900px) {
     .contact-inner {

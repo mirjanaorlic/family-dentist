@@ -84,7 +84,7 @@ function changeColor() {
   } else if (scrollPosY >= pricingSectionTop && scrollPosY <= contactSectionTop){
     removeDotColor();
     pricingDot.classList.add('active-colored');
-  } else if (scrollPosY >= pricingSectionTop) {
+  } else if (scrollPosY >= contactSectionTop) {
     removeDotColor();
     contactDot.classList.add('active-colored');
   }
